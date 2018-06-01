@@ -1,5 +1,7 @@
 # How to use the grassbian image
 
+You can get the latest image [here](https://github.com/iopipe/pi-gen-greengrass/releases)
+
 1. Grab a tool like [etcher](https://etcher.io) or any tool that burns images to SD cards
 2. Burn the image
 3. Eject and re-insert the card, go into the mounted drive partition (boot partition for Linux afficionados)
