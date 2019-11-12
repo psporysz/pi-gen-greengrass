@@ -10,6 +10,8 @@ tar Czxf ${ROOTFS_DIR} files/greengrass*.tar.gz
 # Users should place the extracted keys/config into the fat32 partition.
 rm -rf ${ROOTFS_DIR}/greengrass/certs \
        ${ROOTFS_DIR}/greengrass/config
+mkdir -p ${ROOTFS_DIR}/greengrass/certs
+mkdir -p ${ROOTFS_DIR}/greengrass/config
 mkdir -p ${ROOTFS_DIR}/boot/greengrass/certs
 mkdir -p ${ROOTFS_DIR}/boot/greengrass/config
 
