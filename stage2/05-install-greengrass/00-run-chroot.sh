@@ -17,11 +17,14 @@ chmod 755 /etc/init.d/S02greengrass
 
 cat <<EOF >/etc/systemd/system/greengrass.service
 [Unit]
-Description=AWS Greengrass Service
+Description=AWS Greengrass Daemon
 
 [Service]
-Type=notify
+Type=forking
+PIDFile=/var/run/greengrassd.pid
 ExecStart=/etc/init.d/S02greengrass start
+ExecReload=/etc/init.d/S02greengrass restart
+ExecStop=/etc/init.d/S02greengrass stop
 Restart=on-failure
 
 [Install]
