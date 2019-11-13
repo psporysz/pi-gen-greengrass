@@ -1,6 +1,7 @@
 # Grassbian Users
 
-[use this guide](./SETUP-GREENGRASS.md) to get started
+* [Get started](./SETUP-GREENGRASS.md)
+* [Build own image](./BUILD-GREENGRASS.md)
 
 # pi-gen
 
